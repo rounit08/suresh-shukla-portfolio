@@ -4,7 +4,7 @@ import "./ShortPoem.css";
 
 const ShortPoem = () => {
   return (
-    <div className="relative mb-8 text-gray-800 text-2xl text-center leading-relaxed p-10 rounded-xl shadow-xl max-w-3xl mx-auto mt-16">
+    <div className="relative mb-8 text-gray-800 text-xl md:text-3xl text-center leading-relaxed md:p-10 rounded-xl shadow-xl max-w-3xl mx-auto mt-16">
       {/* Gradient Border */}
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl -m-1.5"></div>
 

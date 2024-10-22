@@ -4,7 +4,7 @@ import facebooksvg from "../../public/assets/icons/faceboook2.svg";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-800 custom-container py-10 text-white p-6 flex justify-between items-center">
+      <footer className="bg-gray-800 custom-container py-10 text-white p-6 flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-start ">
         {/* Left Section */}
         <div className="footer-left">
           <h4 className="text-lg font-bold mb-2">संपर्क करें</h4>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="border-t-2 border-t-gray-600 custom-container text-center py-3 text-gray-200">
-        c सुरेश कुमार शुक्ल 'संदेश'
+        c सुरेश कुमार शुक्ल &apos;संदेश&apos;
       </div>
     </>
   );
