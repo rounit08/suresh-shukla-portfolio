@@ -9,7 +9,6 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import image1 from "../../public/assets/images/FB_IMG_1721389491849.jpg";
 
 export const HeroParallax = ({
   products,
@@ -22,7 +21,7 @@ export const HeroParallax = ({
 }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const thirdRow = products.slice(11, 30);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -58,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className=" py-40 overflow-hidden h-[300vh] z-10  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -88,11 +87,11 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row  mb-20 space-x-20 ">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
-              translate={translateX}
+              translate={translateXReverse}
               key={product.title}
             />
           ))}
@@ -137,12 +136,12 @@ export const ProductCard = ({
 }) => {
   return (
     <motion.div
-      style={{
-        x: translate,
-      }}
-      whileHover={{
-        y: -10,
-      }}
+      // style={{
+      //   x: translate,
+      // }}
+      // whileHover={{
+      //   y: -10,
+      // }}
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
@@ -154,7 +153,7 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-contain object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />
       </Link>

@@ -13,18 +13,21 @@ import {
 
 export function BentoGridDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid>
+    <>
+      <div className="text-center text-4xl mt-10 mb-5">रचनाएं</div>
+      <BentoGrid className="max-w-4xl mx-auto">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            icon={item.icon}
+            className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          />
+        ))}
+      </BentoGrid>
+    </>
   );
 }
 const Skeleton = () => (
@@ -32,45 +35,72 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "अनंत आविर्भाव",
+    description:
+      "https://drive.google.com/file/d/1Nm7umj8FArm4Ig9JO34vLoHiPK-rrJ3D/view?usp=sharing",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "पंचरत्ना",
+    description:
+      "hhttps://drive.google.com/file/d/1zGCJn5N7oDqkEA-UAZOuBF9vcxXhG6n_/view?usp=sharing",
     header: <Skeleton />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "पंचायन",
+    description:
+      "https://drive.google.com/file/d/1KbyKMbOQcZRoUqf21rtTtz2OErBKTEAS/view?usp=drive_link",
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
+    title: "प्रतिशोध",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "https://drive.google.com/file/d/1YVqQoO5UKQvMm2niK1AwegqDYRtcBIRf/view?usp=drive_link",
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "  कागज की तलवार",
+    description:
+      "https://drive.google.com/file/d/1x9Ie5wFU8W6jdcc7pdSmBE5WPkVkPWgD/view?usp=drive_link",
     header: <Skeleton />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
+    title: "धर्मविजय",
+    description:
+      "https://drive.google.com/file/d/1ucOEwWqUgD9POVDd3h59xg7ukFVILAa6/view?usp=drive_link",
     header: <Skeleton />,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
+    title: "चांदनी के घर",
+    description:
+      "https://drive.google.com/file/d/1FxU32Wt4xB6VTzzAqxBkE3nEWzC8gVjW/view?usp=drive_link",
+    header: <Skeleton />,
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "श्री हनुमत बावनी",
+    description:
+      "https://drive.google.com/file/d/1kdP07OPN-ln0Fsf5EGeuLUz_dJJV72am/view?usp=drive_link",
+    header: <Skeleton />,
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: " दुर्गा चालीसा  ",
+    description:
+      "https://drive.google.com/file/d/1QTbffdJUJNxmMrF5SA0sOpgBaMZnBf5I/view?usp=sharing",
+    header: <Skeleton />,
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "दर्पण देखे कौन",
+    description:
+      "https://drive.google.com/file/d/1vzIvMBl9mXota-pIUtQLFPmtv7AeC1VR/view?usp=drive_link",
     header: <Skeleton />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
