@@ -10,11 +10,11 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-white ">
-              सुरेश कुमार शुक्ल 'संदेश'
+              सुरेश कुमार शुक्ल &apos;संदेश&apos;
               <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-[100px] leading-none">
                 {" "}
-                'संदेश'
+                &apos;संदेश&apos;
               </span>
             </h1>
           </>
