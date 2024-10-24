@@ -6,11 +6,11 @@ import image2 from "../../public/assets/images/Gola Gaurav.jpg";
 import image3 from "../../public/assets/images/Suresh ji with Arvind ji.jpg";
 import image4 from "../../public/assets/images/Sureshji with Vidhayak.jpg";
 
-import image7 from "../../public/assets/images/award by akhilesh yadav.jpg";
-import image8 from "../../public/assets/images/bharti bhushan image.jpg";
+import image7 from "../../public/assets/images/Sandesh ji with Ex CM (1).jpg";
+import image8 from "../../public/assets/images/bharatiBhusan.jpg";
 
 import image5 from "../../public/assets/images/shukla sureash image.jpg";
-import image6 from "../../public/assets/images/suresh shukla image.jpg";
+import image6 from "../../public/assets/images/Photo 3.jpg";
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }

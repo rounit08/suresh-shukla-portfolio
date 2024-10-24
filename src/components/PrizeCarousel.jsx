@@ -3,9 +3,9 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "./ui/prize-carousel";
 import AnandMishraPrize from "../../public/assets/images/anand mishra award UP GOV.jpg";
-import BharatiBhushanPrize from "../../public/assets/images/bharti bhushan image.jpg";
+import BharatiBhushanPrize from "../../public/assets/images/bharatiBhusan.jpg";
 import GolaGuaravPrize from "../../public/assets/images/gola gaurav award.jpg";
-import NaamitPrize from "../../public/assets/images/naamit puruskar up gov.jpg";
+import NaamitPrize from "../../public/assets/images/naamit.jpg";
 import NeerajSahityakarPrize from "../../public/assets/images/neeraj sahityakar purushkar.jpg";
 
 export function PrizeCarousel() {
